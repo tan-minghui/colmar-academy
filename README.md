@@ -1,1 +1,3 @@
 # colmar-academy
+
+Capstone project!
