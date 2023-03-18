@@ -62,6 +62,10 @@ main {
     display: none;
 }
 
+#nav_list {
+    vertical-align: middle;
+}
+
 #container_header {
     display: flex;
     position: fixed;
@@ -69,7 +73,7 @@ main {
     width: 100%;
     height: 64px;
     justify-content: space-between;
-    align-items: center;
+    align-items: middle;
     padding-right: 1rem;
     border-bottom: solid 1px white;
 }
@@ -106,7 +110,8 @@ li a {
     display: block;
     color: white;
     padding: 0 0.5rem;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: larger;
 }
 
 /* Header/Navigation Bar Mobile */
@@ -146,4 +151,240 @@ li a {
     overflow: 100%;
     padding: 2rem 1.5rem;
     min-width: 450px;
+}
+
+#img_intro {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    font-size: 1.2 rem;
+    background-color: seagreen;
+    color: white;
+    Padding: 10px 8px;
+    border-radius: 5px;
+}
+
+#intro_text h3 {
+    padding: 0 0 3rem 0;
+}
+/* 2nd body */
+
+.mobile_info {
+    display: none;
+}
+
+.container_info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.infoleft_container {
+    flex-basis: 60%;
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+.infoleft_container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 2rem 1.5rem;
+}
+
+.text_practice * {
+    padding-left: 4rem;
+    padding-right: 3rem;
+    color: white;
+}
+
+#quote_name {
+    padding-bottom: 2rem;
+}
+
+.inforight_container {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.box a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#orientation_box .read, #campus_box .read, #lecture_box .read {
+    font-weight: 500;
+    color: white;
+}
+
+.box .desktop_info {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    padding: 1rem 1rem;
+}
+
+#campus_box, #orientation_box, #lecture_box {
+    background-color: rgb(138, 218, 209);
+    border-color: cadetblue;
+    border-width: 1px 2px;
+    border-style: solid;
+}
+
+.box .text {
+    flex-basis: 65%;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    color: #525252;
+}
+
+.box .text * {
+    padding-bottom: 0.5rem;
+}
+
+/* 3rd section - Courses */
+
+#container_courses {
+    padding: 2rem 4.5rem;
+    background-color: lightgrey;
+}
+
+.grid_courses {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
+    box-sizing: border-box;
+}
+
+.course_box {
+    background-color: white;
+}
+
+#course_header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.course_box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.course_text {
+    padding: 1rem 1rem 1.5rem;
+}
+
+.course_text h3, h4 {
+    padding-bottom: 0.5rem;
+}
+
+.course_text h4 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.course_text a {
+    color: #525252;
+}
+
+.course_text a:hover {
+    color:seagreen;
+}
+
+/* 4th Section - Thesis  */
+
+#thesis_header{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: cadetblue;
+    color: white;
+}
+
+#container_thesis {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.thesis_urban{
+    flex-basis: 60%;
+    padding: 0 1.5rem 2rem;
+}
+
+.thesis_blocks a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.thesis_blocks > a:hover {
+    background-color: rgb(142, 224, 213);
+}
+
+.vid video {
+    width: 100%;
+    padding: 1rem 0rem;
+    padding: 0px 1rem; 
+}
+
+.vid_text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.vid_text h3 {
+    padding-bottom: 0.5rem;
+    padding-top: 0px;
+}
+
+.thesis_mobile {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.thesis_blocks {
+    display: flex;
+    align-items: center;
+    border: solid rgba(68, 85, 85, 0.1) .5px;
+    flex: 1;
+    background-color: rgb(180, 238, 230);
+}
+
+.thesis_blocks figure img {
+    flex-basis: 10%;    
+}
+
+.thesis_text {
+    flex-basis: 90%;
+    color: #525252;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.thesis_text h3 {
+    padding-bottom: 1rem;
 }
