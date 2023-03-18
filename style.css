@@ -375,11 +375,11 @@ li a {
 }
 
 .thesis_blocks figure img {
-    flex-basis: 10%;    
+    flex-basis: 30%;    
 }
 
 .thesis_text {
-    flex-basis: 90%;
+    flex-basis: 70%;
     color: #525252;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -387,4 +387,40 @@ li a {
 
 .thesis_text h3 {
     padding-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+    padding-right: 1rem;
+    color: #525252;
+    font-size: small;
+}
+
+footer li {
+    float: right;
+    list-style: none;
+    padding: 0 5px;
+}
+
+footer a {
+    color: #525252;
+}
+
+/* Footer Mobile */
+
+@media only screen and (max-width: 920px) {
+    
+    footer p {
+        display: initial;
+    }
+
+    footer ul {
+        display: none;
+    }
 }
